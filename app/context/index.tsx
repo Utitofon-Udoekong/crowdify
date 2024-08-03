@@ -29,7 +29,7 @@ const CryptoContextProvider = ({ children }: { children: React.ReactNode }) => {
 
   const publishCampaign = async (form: any) => {
     try {
-      const transaction = prepareContractCall({
+      const transaction: any = prepareContractCall({
         contract,
         method: "createCampaign",
         params: [
@@ -42,9 +42,9 @@ const CryptoContextProvider = ({ children }: { children: React.ReactNode }) => {
       });
       sendTransaction(transaction);
 
-      console.log("contract call success", transaction.data)
+      // console.log("contract call success", transaction.data)
     } catch (error) {
-      console.log("contract call failure", error)
+      // console.log("contract call failure", error)
     }
   }
 
@@ -67,7 +67,7 @@ const CryptoContextProvider = ({ children }: { children: React.ReactNode }) => {
 
   const donate = async (pId: number, amount: string) => {
     try {
-      const transaction = prepareContractCall({
+      const transaction: any = prepareContractCall({
         contract,
         method: "donateToCampaign",
         params: [BigInt(pId)],

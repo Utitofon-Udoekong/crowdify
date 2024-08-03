@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Sidebar.jsx", "app/components/FundCard.jsx", "app/dashboard/CreateCampaign.jsx", "app/components/DisplayCampaigns.jsx", "app/CreateCampaign/page.jsx", "app/components/CustomButton.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Sidebar.jsx", "app/components/FundCard.jsx", "app/dashboard/CreateCampaign.jsx", "app/components/DisplayCampaigns.jsx", "app/CreateCampaign/page.jsx", "app/components/CustomButton.jsx", "app/context/index.tsx"],
   "exclude": ["node_modules"]
 }

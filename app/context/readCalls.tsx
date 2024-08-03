@@ -12,7 +12,7 @@ export const useGetCampaigns = () => {
 
 
   if (error) {
-    console.error("contract call failure", error);
+    // console.error("contract call failure", error);
     return [];
   }
 
